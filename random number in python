@@ -1,0 +1,16 @@
+import random
+randNumber = random.randint(1,100)
+userGuess = None
+guesses = enumerate
+
+while (userGuess != randNumber):
+    userGuess = int(input("Enter the guess:"))
+    if(userGuess == randNumber):
+        print("your guessed is right!")
+    else:
+        if(userGuess>randNumber):
+            print("your guessed it wrong! Enter a smaller number")
+        else:
+            print("your guessed it wrong! Enter a larger number")
+
+print(f"Your guessed the number in {guesses} guesses")
